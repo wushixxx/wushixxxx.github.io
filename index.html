@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/layui/css/layui.css" tppabs="/static/layui/css/layui.css"  media="all">
+    <title>电子试玩平台</title>
+    <meta name="keywords" content="电子试玩平台"/>
+    <meta name="description" content="电子试玩"/>
+    <script type="text/javascript">
+        var oWidth =
+            document.documentElement.clientWidth || document.body.clientWidth;
+        if (oWidth < 1200) {
+            window.location.href = "h5";
+        } else {
+        }
+        window.addEventListener(
+            "orientationchange",
+            function () {
+                var oWidth =
+                    document.documentElement.clientWidth || document.body.clientWidth;
+                if (oWidth < 1200) {
+                    window.location.href = "h5";
+                }
+            },
+            false
+        );
+        window.addEventListener(
+            "resize",
+            function () {
+                var oWidth =
+                    document.documentElement.clientWidth || document.body.clientWidth;
+                if (oWidth < 1200) {
+                    window.location.href = "h5";
+                }
+            },
+            false
+        );
+    </script>
+</head>
+
+        <!-- 選單 -->
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#p0" onclick="game(9)"></a>
+                </li>
+                <li>
+                    <a href="#p1" class="tab01" onclick="game(1)"></a>
+                </li>
+                <li>
+                    <a href="#p2" class="tab02" onclick="game(2)"></a>
+                </li>
+                <li>
+<!--                    <a href="#p3" class="tab03" onclick="game(3)"></a>-->
+                    <a class="tab03" href="javascript:;" onclick=yyyy("https://www.jdbgaming.com/cn/game")></a>
+                </li>
+                <li>
+                    <a href="#p4" class="tab04" onclick="game(4)"></a>
+                </li>
+                <li>
+                    <a href="#p5" class="tab05" onclick="game(5)"></a>
+                </li>
+                <li>
+                    <a href="#p6" class="tab06" onclick="game(6)"></a>
+                </li>
+                <li class="dropdown">
+                    <a target="_blank" href="javascript:"></a>
+                    <div class="dropdown_content">
+                        <!--                        <a class="dropdown_menu dropdown_menu01" href="#p7" id="tab07" onclick="game(7)"></a>-->
+                        <!--                        <a class="dropdown_menu dropdown_menu02" href="#p8" id="tab08" onclick="game(8)"></a>-->
+
+                         <a class="dropdown_menu dropdown_menu01" href="javascript:;" onclick=yyyy("https://www.huanlegame.com/index.html")></a>
+                        <a class="dropdown_menu dropdown_menu02" href="javascript:;" onclick=yyyy("https://leg.kocms397.com/")></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 遊戲列表 -->
+    <div class="tabBox" id="p99999">
+        <ul>
+            <li>
+                <a class="tab tab01" id="p1" href="javascript:;" onclick="game(1)"></a>
+            </li>
+            <li>
+                <a class="tab tab02" id="p2" href="javascript:;" onclick="game(2)"></a>
+            </li>
+             <li>
+<!--                <a class="tab tab03" id="p3" href="javascript:;" onclick="game(3)"></a>-->
+                <a class="tab tab03" href="javascript:;" onclick=yyyy("https://www.jdbgaming.com/cn/game")></a>
+            </li>
+            <li>
+                <a class="tab tab04" id="p4" href="javascript:;" onclick="game(4)"></a>
+            </li>
+            <li>
+                <a class="tab tab05" id="p5" href="javascript:;" onclick="game(5)"></a>
+            </li>
+            <li>
+                <a class="tab tab06" id="p6" href="javascript:;" onclick="game(6)"></a>
+            </li>
+           <li>
+                <!--                <a class="tab tab07" id="p7" href="javascript:;" onclick="game(7)"></a>-->
+                <a class="tab tab07" id="p7" href="javascript:;" onclick=yyyy("https://www.huanlegame.com/index.html")></a>
+            </li>
+            <li>
+                <!--                <a class="tab tab08" id="p8" href="javascript:;" onclick="game(8)"></a>-->
+                <a class="tab tab08" id="p8" href="javascript:;" onclick=yyyy("https://leg.kocms397.com/")></a>
+            </li>
+        </ul>
+        <span id="spanGG"> </span>
+    </div>
+
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/swiper.min.js"></script>
+<script src="/static/js/jquery.marquee.min.js"></script>
+<script src="/static/js/js.js"></script>
+</body>
+
+</html>
+<script src="/static/layui/layui.js" charset="utf-8"></script>
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"JmU4mL2tlh8i6Jc3",ck:"JmU4mL2tlh8i6Jc3"})</script>
+<script>
+    $(function(){
+        document.onkeydown = function(e){
+            var ev = document.all ? window.event : e;
+            if(ev.keyCode==13) {
+                var layer = layui.layer;
+                var searchName = $("#searchName").val();
+                if (searchName){
+                    //锚点
+                    $("html,body").animate({scrollTop:$("#p99999").offset().top},1000);
+                    //请求数据
+                    $.post("index.php/index/Index/game",{name:searchName},function(result){
+                        console.log(result);
+                        $("#spanGG").html(result.html);
+                        $('a.tab0'+result.id).addClass("active");
+
+                        // $('a.tab0'+result.id).click();
+                        // $('a.tab0'+result.id).off("click").click(function(){
+                        //     // alert("执行");
+                        //     //console.log('sss');
+                        // });
+                    });
+                }
+            }
+        }
+    });
+
+
+</script>
+<script>
+    window.onload = function(){
+        $.post("index.php/index/Index/open",{id:1},function(result){
+            console.log(result);
+            if (result.flag){
+                layui.use('layer', function(){ //独立版的layer无需执行这一句
+                    var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
+                    var type = 1;
+                    var imgss  = result.img;
+                    layer.open({
+                        type: 1
+                        ,offset: type //具体配置参考：http://www.ilayuis.com/doc/modules/layer.html#offset
+                        ,id: 'layerDemo'+type //防止重复弹出
+                        ,content: imgss
+                        ,btn: '关闭'
+                        ,btnAlign: 'c' //按钮居中
+                        ,shade: 0 //不显示遮罩
+                        ,yes: function(){
+                            layer.closeAll();
+                        }
+                    });
+                });
+            }
+        });
+    }
+    $.post("index.php/index/Index/game",{id:10},function(result){
+        console.log(result);
+        $("#spanGG").html(result.html);
+    });
+
+    function yiru(id,img) {
+        $("#icon"+id).attr("src",img);
+    }
+    function yichu(id,img) {
+        $("#icon"+id).attr("src",img);
+    }
+    function layer0(id) {
+        $.post("index.php/index/Index/notice",{id:id},function(result){
+            console.log(result);
+            if (result.txt){
+                var txt = result.txt;
+                var layer = layui.layer;
+                layer.open({
+                    content:"<div style='width: 500px;height: 500px'>"+txt+"</div>"
+                })
+            }
+        });
+    }
+    //搜索
+    function search() {
+        var layer = layui.layer;
+        var searchName = $("#searchName").val();
+        if (!searchName){
+            layer.msg('名称不能为空');
+            return false;
+        }
+        //锚点
+        $("html,body").animate({scrollTop:$("#p99999").offset().top},1000);
+        //请求数据
+        $.post("index.php/index/Index/game",{name:searchName},function(result){
+            console.log(result);
+            $("#spanGG").html(result.html);
+            $('a.tab0'+result.id).addClass("active");
+
+            // $('a.tab0'+result.id).click();
+            // $('a.tab0'+result.id).off("click").click(function(){
+            //     // alert("执行");
+            //     //console.log('sss');
+            // });
+        });
+        // $('a.tab0'+result.id).off("click").click(function(){
+        //    // alert("执行");
+        //     //console.log(ssss);
+        // });
+        // $('#box').addClass('active')    // 添加
+        // layer.open({
+        //     content:'ddd'
+        // })
+    }
+    //按照分类搜索
+    function game(id) {
+        $.post("index.php/index/Index/game",{id:id},function(result){
+            console.log(result);
+            $("#spanGG").html(result.html);
+        });
+        return false;
+    }
+    //弹出iframe
+    function yyyy(url) {
+        //alert(tt);
+        // var txt = '<iframe src="https://blog.csdn.net/ name="iframe_a">\n' +
+        //     ' <p>您的浏览器不支持  iframe 标签。</p>\n' +
+        //     '</iframe>';
+        // layer.open({
+        //     content:txt
+        // })
+        var that = this;
+        //多窗口模式，层叠置顶
+        layer.open({
+            type: 2 //此处以iframe举例
+            ,title: ' '
+            ,area: ['90%', '660px']
+            ,shade: 0
+            ,maxmin: true
+            ,offset: 'auto'
+            ,content: [url]
+
+            ,btn: [] //只是为了演示
+            ,yes: function(){
+                $(that).click();
+            }
+            ,btn2: function(){
+                layer.closeAll();
+            }
+
+            ,zIndex: layer.zIndex //重点1
+            ,success: function(layero, index){
+                layer.setTop(layero); //重点2. 保持选中窗口置顶
+
+                //记录索引，以便按 esc 键关闭。事件见代码最末尾处。
+                layer.escIndex = layer.escIndex || [];
+                layer.escIndex.unshift(index);
+                //选中当前层时，将当前层索引放置在首位
+                layero.on('mousedown', function(){
+                    var _index = layer.escIndex.indexOf(index);
+                    if(_index !== -1){
+                        layer.escIndex.splice(_index, 1); //删除原有索引
+                    }
+                    layer.escIndex.unshift(index); //将索引插入到数组首位
+                });
+            }
+            ,end: function(){
+                //更新索引
+                if(typeof layer.escIndex === 'object'){
+                    layer.escIndex.splice(0, 1);
+                }
+            }
+        });
+    }
