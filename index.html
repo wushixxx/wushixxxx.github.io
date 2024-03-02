@@ -1,297 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="stylesheet" href="/static/layui/css/layui.css" tppabs="/static/layui/css/layui.css"  media="all">
-    <title>电子试玩平台</title>
-    <meta name="keywords" content="电子试玩平台"/>
-    <meta name="description" content="电子试玩"/>
-    <script type="text/javascript">
-        var oWidth =
-            document.documentElement.clientWidth || document.body.clientWidth;
-        if (oWidth < 1200) {
-            window.location.href = "h5";
-        } else {
-        }
-        window.addEventListener(
-            "orientationchange",
-            function () {
-                var oWidth =
-                    document.documentElement.clientWidth || document.body.clientWidth;
-                if (oWidth < 1200) {
-                    window.location.href = "h5";
-                }
-            },
-            false
-        );
-        window.addEventListener(
-            "resize",
-            function () {
-                var oWidth =
-                    document.documentElement.clientWidth || document.body.clientWidth;
-                if (oWidth < 1200) {
-                    window.location.href = "h5";
-                }
-            },
-            false
-        );
-    </script>
-</head>
+<body>
+<div class="container">
+    <header>
+        <div class="searchBox">
+            <input type="text" placeholder="搜索" id="searchName">
+            <span onclick="search()"><a href="javascript:;"><img class="search" src="/static/wap/img/search.png" alt=""></a></span>
+        </div>
+        <img class="logo" src="/uploads/20230420/75d038e95b4c0efa50dd8c41883374bb.png" alt="">
+    </header>
 
-        <!-- 選單 -->
-        <div class="menu">
+    <!-- 輪播 -->
+    <div class="swiper mySwiper swiper-container-horizontal swiper-container-ios">
+        <div class="swiper-wrapper" style="transform: translate3d(-1068px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 356px;"><a target="_blank" href="https://www.629-qqpp.com:8866/?aff=1340462"><img src="/uploads/20230421/8f5b34bd5c8fc3b0fc212c129c3763ab.jpg" alt=""></a></div>
+                        <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 356px;"><a target="_blank" href="https://www.629-wgdz.com:9900/?aff=1340462"><img src="/uploads/20230602/0c0130e3f6dddaf47eb00d99adcc4425.gif" alt=""></a></div>
+                        <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 356px;"><a target="_blank" href="https://www.629-qqpp.com:8866/?aff=1340462"><img src="/uploads/20230421/8f5b34bd5c8fc3b0fc212c129c3763ab.jpg" alt=""></a></div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 356px;"><a target="_blank" href="https://www.629-wgdz.com:9900/?aff=1340462"><img src="/uploads/20230602/0c0130e3f6dddaf47eb00d99adcc4425.gif" alt=""></a></div></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+    <!-- 跑馬燈 -->
+    
+
+    
+    <!-- 遊戲列表 -->
+    <div class="tabBox">
+        <div class="tabmenuBox">
             <ul>
+                
                 <li>
-                    <a href="#p0" onclick="game(9)"></a>
+                    <a class="tab tab02 active" href="javascript:;" onclick="game(10)"></a>
                 </li>
                 <li>
-                    <a href="#p1" class="tab01" onclick="game(1)"></a>
+                    <a class="tab tab03" href="javascript:;" onclick="game(1)"></a>
                 </li>
                 <li>
-                    <a href="#p2" class="tab02" onclick="game(2)"></a>
+                    <a class="tab tab04" href="javascript:;" onclick="game(2)"></a>
                 </li>
                 <li>
-<!--                    <a href="#p3" class="tab03" onclick="game(3)"></a>-->
-                    <a class="tab03" href="javascript:;" onclick=yyyy("https://www.jdbgaming.com/cn/game")></a>
+<!--                    <a class="tab tab05" href="https://www.jdbgaming.com/cn/game" onclick="game(3)"></a>-->
+                    <a class="tab tab05" href="javascript:;" onclick="yyyy(&quot;https://www.jdbgaming.com/cn/game&quot;)"></a>
                 </li>
                 <li>
-                    <a href="#p4" class="tab04" onclick="game(4)"></a>
+                    <a class="tab tab06" href="javascript:;" onclick="game(4)"></a>
                 </li>
                 <li>
-                    <a href="#p5" class="tab05" onclick="game(5)"></a>
+                    <a class="tab tab07" href="javascript:;" onclick="game(5)"></a>
                 </li>
                 <li>
-                    <a href="#p6" class="tab06" onclick="game(6)"></a>
+                    <a class="tab tab08" href="javascript:;" onclick="game(6)"></a>
                 </li>
-                <li class="dropdown">
-                    <a target="_blank" href="javascript:"></a>
-                    <div class="dropdown_content">
-                        <!--                        <a class="dropdown_menu dropdown_menu01" href="#p7" id="tab07" onclick="game(7)"></a>-->
-                        <!--                        <a class="dropdown_menu dropdown_menu02" href="#p8" id="tab08" onclick="game(8)"></a>-->
-
-                         <a class="dropdown_menu dropdown_menu01" href="javascript:;" onclick=yyyy("https://www.huanlegame.com/index.html")></a>
-                        <a class="dropdown_menu dropdown_menu02" href="javascript:;" onclick=yyyy("https://leg.kocms397.com/")></a>
-                    </div>
+                <li>
+                    <!--                    <a class="tab tab09" href="javascript:;" onclick="game(7)"></a>-->
+                    <a class="tab tab09" href="javascript:;" onclick="yyyy(&quot;https://www.huanlegame.com/index.html&quot;)"></a>
+                </li>
+                <li>
+                    <!--                    <a class="tab tab10" href="javascript:;" onclick="game(8)"></a>-->
+                    <a class="tab tab10" href="javascript:;" onclick="yyyy(&quot;https://leg.kocms397.com/&quot;)"></a>
                 </li>
             </ul>
         </div>
-    </header>
+        <div class="tab_contentBox">
+            <span id="spanGG"><div class="tab_content tab_content0.10 active">
+                <div class="tab_content_grid"><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/65/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/a8650c8cc6f8a4a5.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>麻将胡了</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/74/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/7623f4cdc50e184e.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>麻将胡了2</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://download.claretfox.com/PSS-ON-00141/?access_token=(*--)1bc1a612738407d868a5d80f2bfeaebe&amp;lang=sch&amp;ccy=CNY&amp;sm=00&amp;subid=0&amp;fullscr=1&amp;lc=zh-CN&amp;pm=1&amp;ns=0&amp;origin=https%3A%2F%2Fb2b-api.claretfox.com&amp;anal=&amp;lb=2&amp;stf=0&amp;showver=1')">
+                    <img src="http://629ceo.com//uploads/20230504/c63b591b15e199ea278107035f2f4559.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>麻将胡了3</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://download-aly.u9qipai.com/PSS-ON-00146/?access_token=(*--)1bc1a612738407d868a5d80f2bfeaebe&amp;lang=sch&amp;ccy=CNY&amp;sm=00&amp;subid=0&amp;fullscr=1&amp;lc=zh-CN&amp;pm=1&amp;ns=0&amp;origin=https%3a%2f%2fb2b-api.claretfox.com&amp;anal=&amp;lb=2&amp;stf=0&amp;showver=1')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/79/79157.png?v=0" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>麻将胡了3+</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/87/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/17f21eacc70429ae.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>寻宝黄金城</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/84/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220207/fd126c1e2ed07544.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>赏金女王</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/60/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/8e9c9a0ce43b767e.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>爱尔兰精灵</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/89/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/26ca8cb7438ee82d.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>招财喵</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.coicsx.com/135/index.html?l=zh&amp;btt=1&amp;ot=18874BBF-DAA8-47FF-B023-39564FF17F5F&amp;ops=9a1f9f7477f474604048b02bc2426859037d5a59&amp;f=&amp;iwk=1&amp;__refer=m.pgr-cnf3f3.com&amp;or=static.coicsx.com&amp;__hv=1fe08b9d')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220903/b2cb66d92279251f.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>赏金大对决</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/106/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/3ffc408153e7ff6c.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>麒麟送宝</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=111.125.84.137&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxEd3bLggmu1NWl/yCCC0A8cv4ZfsvIwLcj7KWFW72Z9HCTcgqsSZGpSmTVEaGTTDUz0o2qoAQ5VRK/H/RYD0gHw==&amp;key=4718b3ad26926fbd1553008cf225d2bb')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200321/b18a8d71a5ba18d1.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>捕鱼王2D</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.jdbgaming.com/cn/game')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/4aeb62c35fb9577e.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>猎龙高手</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=121.58.198.151&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxGhhIT+fYHdet36o+trhYExA4jjTg+ERnXp+6GqWVYbhY08vXH9ft8PNsvzPLTIkra753CXLVlYKgXuO6pnU/ww==&amp;key=9a5187b3fd89c641f8ce709f797ef5b2')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200311/fe8507d85b857ebf.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>射龙门</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.jdbgaming.com/cn/game')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/693c39e65dced6d3.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>财神捕鱼</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=121.58.198.151&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxc3rqx/ifM9n2YkcBDD56Ay1GbXdljdUTmf4yVyYuzktQ5Ev46+PFSZwOzHZM/EgdoXzssbz2fTkeC1owdjmgkQ==&amp;key=7945899049f7251a4d509a7078ffaaf3')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200311/3598ca9b846b5b5d.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>太空漫游</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.jdbgaming.com/cn/game')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/00fd0e75e4cdb620.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>五龙捕鱼</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5908&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220207/89929f9eafe66b44.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>糖果派对2</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=121.58.198.151&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxfSC6WjLKaAKt36o+trhYExA4jjTg+ERnXp+6GqWVYbhY08vXH9ft8PNsvzPLTIkra753CXLVlYKgXuO6pnU/ww==&amp;key=8bcfb4bf4825f1554b1b76a0e4c8ffcb')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200311/2226a316a38d694a.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>奔驰宝马</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=121.58.198.151&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxaQsRYuSMx/X2YkcBDD56Ay1GbXdljdUTmf4yVyYuzktQ5Ev46+PFSZwOzHZM/EgdoXzssbz2fTkeC1owdjmgkQ==&amp;key=0daf8ae42235810f94c7cbb4ec2134d1')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200311/be0b0720cefd5c5b.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>日本武士</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=111.125.84.137&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxtOTCJftKA6et36o+trhYExA4jjTg+ERnXp+6GqWVYbhY08vXH9ft8PNsvzPLTIkra753CXLVlYKgXuO6pnU/ww==&amp;key=9e2e2387811b62d882293dc696c77fb3')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20201125/29c3619a517c819a.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>一飞冲天</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=111.125.84.137&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxEd3bLggmu1NWl/yCCC0A8cv4ZfsvIwLcj7KWFW72Z9HCTcgqsSZGpSmTVEaGTTDUz0o2qoAQ5VRK/H/RYD0gHw==&amp;key=4718b3ad26926fbd1553008cf225d2bb')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20200321/a9a115c0a643564d.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>捕鱼王3D</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5901&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/c484a62bad9c91bd.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>连环夺宝</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=111.125.84.137&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxEd3bLggmu1NWl/yCCC0A8cv4ZfsvIwLcj7KWFW72Z9HCTcgqsSZGpSmTVEaGTTDUz0o2qoAQ5VRK/H/RYD0gHw==&amp;key=4718b3ad26926fbd1553008cf225d2bb')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20201006/153bf070b4880577.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>捕鱼乐园</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://gci.playbb777.net/403.html?remote=111.125.84.137&amp;params=lkDwBDA2Nry4E8/gu7W3jbum4a5lyzgC0acq6KVmDflumKDUl50Pqpzs18d9TFGkN2dmMmLlcLHnQBlY0e+Lwr+nHXPWQoEfpzUKgXS4lVhky7dUQtekqUqYGiTSxNwUuguM9aTYHb+xnBFvzYa3oYuNsumDrJtxEd3bLggmu1NWl/yCCC0A8cv4ZfsvIwLcj7KWFW72Z9HCTcgqsSZGpSmTVEaGTTDUz0o2qoAQ5VRK/H/RYD0gHw==&amp;key=4718b3ad26926fbd1553008cf225d2bb')">
+                    <img src="https://img.wnhyjc.com/uploads/image/20201117/482b2e7324c53e7a.png@.webp" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>天际猎人</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5902&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220207/720c096626e7704f.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>糖果派对</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://h5c.cqgame.games/h5/52/?language=zh-cn&amp;token=guest123')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/e97a9c690b1992ee.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>跳高高</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://h5c.cqgame.games/h5/105/?language=zh-cn&amp;token=guest123')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/226ac378297b39bb.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>单手跳高高</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://h5c.cqgame.games/h5/99/?language=zh-cn&amp;token=guest123')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/7b771ea26673e32b.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>跳更高</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/gates-of-olympus/?gamelang=zh&amp;cur=CNY')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/37/37219.png?v=1680148154" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>奥林匹斯之门</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/5-rabbits-megaways/?gamelang=zh&amp;cur=CNY')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/37/37238.png?v=1680148154" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>5金狮 Megaways</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://www.pragmaticplay.com/zh/%E6%B8%B8%E6%88%8F/%e7%94%9c%e5%85%a5%e5%bf%83%e6%89%89/?gamelang=zh&amp;cur=CNY')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/37/37134.png?v=1680148154" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>甜入心扉</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/54/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/f801ad19433846a1.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>赏金船长</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/53/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/cd8c99c0dd1b0a3a.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>冰雪大冲关</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/117/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20221222/e71261df03b1a5a6.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>夜醉佳人</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5175&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220207/e07266a515abcb8f.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>满天星</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5210&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/791aab4206fae66d.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>糖果缤纷乐</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://bb-guest.com:5569/game/game.php?GameType=5200&amp;lang=zh-cn')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220205/49543e7aa19436d0.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>鱼虾蟹开了</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/48/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/f891899842d0afef.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>双喜临门</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.coicsx.com/1381200/index.html?l=zh&amp;btt=1&amp;ot=18874BBF-DAA8-47FF-B023-39564FF17F5F&amp;ops=9a1f9f7477f474604048b02bc2426859037d5a59&amp;f=&amp;iwk=1&amp;__refer=m.pgr-cnf3f3.com&amp;or=static.coicsx.com&amp;__hv=1fc04745')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20230326/c5752da1bf7bd1a7.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>夏威夷探奇</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.coicsx.com/62/index.html?l=zh&amp;btt=1&amp;ot=18874BBF-DAA8-47FF-B023-39564FF17F5F&amp;ops=9a1f9f7477f474604048b02bc2426859037d5a59&amp;f=&amp;iwk=1&amp;__refer=m.pgr-cnf3f3.com&amp;or=static.coicsx.com&amp;__hv=1ffa4d34')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/54e302961b08ddb5.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>宝石侠-宝藏征途</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/127/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220713/3f7870cfa92ba52a.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>极速赢家</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/75/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/77a029b83626151d.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>福运象财神</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://m.pgsoft-games.com/73/index.html?language=zh&amp;bet_type=1&amp;operator_token=ca7094186b309ee149c55c8822e7ecf2&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com&amp;btt=2&amp;__refer=m.pg-redirect.net&amp;or=static.pgsoft-games.com')">
+                    <img src="https://img.sxbjmy.com/uploads/image/20220206/0b133f45e3628291.png" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>埃及探秘宝典</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://game.f8qa5xn9.net/index?Params=eyJpdiI6IkFzMmtTUzhSNzM3S2ZiTEtjT0ZPR0E9PSIsInZhbHVlIjoiWXJWQVhJQ0RwUVhqbFloOWJGWjhYQ1VBN1RxL1NKREJqUGJHQkVvSUN0Vy9GaHNPTTJYamg4N3RQdis3aFlVeDk4aWJneWNqd29iS0hvbHp5dk5ZZko1ekcxUmZGTSs5TmM3ZG5GTHVZTUt0blVkbWxaWnk3YlBZMENHekw3ZkowL3hDMklRMmFuMHEzMUN4S1Mxb2ZJMU8wQi9oMlZWTUlyTE9najZyVFJWNk5aQmpNcVFYcnNPdStHcjdyaXJUd0ZsTHlXUE82d2ZEeTB5VEUxc2ZoVzYvV2ZUS0hPeWxGT2padHM4VVBuUT0iLCJtYWMiOiIwNzRmZTE1YmU3ZDcyNzFjNWMyNGQzNDhkOGQwZDk3NjdkMzk2NDBiZjFiNWNhMzcxZGFkNTMyNjc4M2YyYWE2In0%3D&amp;languageID=2')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/114/114032.png?v=1700624270" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>财富连连</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://game.f8qa5xn9.net/index?Params=eyJpdiI6IlE2NmE1ZHJRYjU1SG9Qc3JWTk1WZlE9PSIsInZhbHVlIjoiN1ptL2tHTHIycFIvU3dtVU1rbTBkejVHaVlmQi80RFFseStGbE5BUnJFVXZvS0lDSytKcWhNM24vOTR4dmRGcllkZkpSMnoyU1dkUGdxbTV2SW41WFUzeDlKWkNDS1pEaWxtVllteVlvZnQyM0RiOHFvQUhZOXRuczVjSVo5RWI0NHZ2QlJNOVNTcUdITXU3LzZrd1pFTDl6T3RnNlA4aEh6YzZocjBwREtsWVRFaExVSWdqWVFRVUtnSXpjZ2tIQWcxc2kvS3dHUjd4dG9Lb25FSTB4WDRtTmhCWHUzV3BnTEl5ditzK0o4TT0iLCJtYWMiOiI2MjczZjI0OWY2ZWE2OGUwYWVkY2E1NGE1NDQ5NmE2YmU5NDIxNmE1ZGQzZDBlYjBhNDM3YjA0YWEyYTdjYWQxIn0%3D&amp;languageID=2')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/114/114028.png?v=1700624270" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>星际捕鱼</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://game.f8qa5xn9.net/index?Params=eyJpdiI6IkEyMDRFSHNrU2s4MkJWZFcxeU5JTlE9PSIsInZhbHVlIjoiRlRhd0lUYkx6YzJ0aFVoU3VYSm1VNTQ3aGhKWDRoSWVSaFpNMWEzRmFHMEdhYjI0WG1oR0FSbHJVUDNNcWNxMktyZmJYUENWSlQ0N1lzdEdnK1dzdmFJZjcyVlY3UnY1QXhjNEJaOWNiUUdsRXU2bVZBMnIvdWJla2RoUnU4RmdqMzM2RzZFK2Q4VjRWcFhzbWQ2SitSYW9oZHhRK01HcXdXbWdGVHp6dXorUGxQa1FJaXNiRkVoM3MwNlY1MC96dEhocHpNY3JnVzJiWi9ySzJsQUdmSFlaYVVtQTJCOUNJMjNUeGNRZlhzUT0iLCJtYWMiOiJkOTg3MDgzODcwM2FiNzZlOGRmNWYzZjNlYmE5MzIwOTlkYjQwODEwZmRmNDMwZWM1OWY2ZDMxZTZhNDA2MWMwIn0%3D&amp;languageID=2')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/114/114006.png?v=1700624270" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>逛夜市</p>
+                </a><a class="gameBox" href="javascript:" onclick="yyyy('https://game.f8qa5xn9.net/index?Params=eyJpdiI6ImJpYWxrZ1ZRS083NExMT20zejA4RUE9PSIsInZhbHVlIjoibjU5ZkFUTysreXF1UkV6cDRUZ1dYUENNbkd0VUVGODlhQStMejlwdEpBWXF2VDdYUDNKWmhMZVphY09tZldWb3kvNVcyeURhUzFldUJ1eDZaZEJiU3lKUlpWMnd5dXRITWNSQmVlTGtZZHJ2Ym8xRmIwOUxXTmlZUTFaNU0wWnRiTGpaVE5vbVRiZzZrZzZmdldWdENMQXZIc2gxQUdvYjhJK0J0MGQxQUhTeUlHcVlJcGxYeGNzYXVnNGk2SGlWa01ZWEM1aktVbSs3WjZUUW41ZVkxeXh0TmN0MGdhcUhuNHA0b2x1ZkhsVT0iLCJtYWMiOiIyZmUyMTA3MTA1NjIxZDYyODM4YTNmOGU4MTU3NDMwZmY3Zjk3NmY5MDhmYTdiODYyMGUxMDVkYTZiMzk0YmY5In0%3D&amp;languageID=2')">
+                    <img src="https://p1.cfvn66.com/game_picture/pc/114/114009.png?v=1700624270" alt="" style="width: 80px" ;height:="" 80px'="">
+                    <p>大过年</p>
+                </a></div>
+            </div></span>
+        </div>
+        <!-- footer -->
 
-    <!-- 遊戲列表 -->
-    <div class="tabBox" id="p99999">
-        <ul>
-            <li>
-                <a class="tab tab01" id="p1" href="javascript:;" onclick="game(1)"></a>
-            </li>
-            <li>
-                <a class="tab tab02" id="p2" href="javascript:;" onclick="game(2)"></a>
-            </li>
-             <li>
-<!--                <a class="tab tab03" id="p3" href="javascript:;" onclick="game(3)"></a>-->
-                <a class="tab tab03" href="javascript:;" onclick=yyyy("https://www.jdbgaming.com/cn/game")></a>
-            </li>
-            <li>
-                <a class="tab tab04" id="p4" href="javascript:;" onclick="game(4)"></a>
-            </li>
-            <li>
-                <a class="tab tab05" id="p5" href="javascript:;" onclick="game(5)"></a>
-            </li>
-            <li>
-                <a class="tab tab06" id="p6" href="javascript:;" onclick="game(6)"></a>
-            </li>
-           <li>
-                <!--                <a class="tab tab07" id="p7" href="javascript:;" onclick="game(7)"></a>-->
-                <a class="tab tab07" id="p7" href="javascript:;" onclick=yyyy("https://www.huanlegame.com/index.html")></a>
-            </li>
-            <li>
-                <!--                <a class="tab tab08" id="p8" href="javascript:;" onclick="game(8)"></a>-->
-                <a class="tab tab08" id="p8" href="javascript:;" onclick=yyyy("https://leg.kocms397.com/")></a>
-            </li>
-        </ul>
-        <span id="spanGG"> </span>
+    </div>
+    
+
+    <!-- 心得 -->
+    <div id="lightbox-1" class="lightbox">
+        <a class="lightbox_close" href="javascript:;"></a>
+        <div class="lightbox_title">
+            <!-- <img class="line" src="img/line.png" alt=""> -->
+            <h2>对PG电子个人看法与技巧分享</h2>
+            <!-- <img class="line" src="img/line.png" alt=""> -->
+        </div>
+        <div class="lightbox_content">
+            <p style="box-sizing:border-box;margin-top:0px;margin-bottom:0px;padding:0px;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);white-space:normal;"><span style="white-space:normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span>以下观念只是我个人观点，不喜勿喷！ 我个人理解与观察，无论哪个台子，他们最终地址都是转接到PG公司，一定要看清楚开头地址是m.coicsx.com这才是PG在中国官方接口，每次维护后地址都会变，还有狗庄是没有办法控制PG的爆率的，狗庄只是对接PG的线路，在PG公司和玩家之间做结算而已！没实力的狗庄，唯一能做得就是各种借口不给出款，毕竟狗庄不是慈善家，他不可能亏本来陪我们玩！这点不接受反驳！所以我们不但要跟狗庄斗智斗勇，想方设法怎么才能赢，还要提防会不会不给出款，还要顾虑会不会收到有问题的钱，而导致卡被冻卡！建议大家用电子钱包进出都快，别一天到晚充充提提的，把卡的流水拉高，就算你没收到有问题的钱，银行也会风控你，原因一个正常生活的人，卡就流水不会那么频繁！所以经量减少卡的流水，需要用钱的时候在去卖虚拟币，作为玩家我们是弱势群体，真的是太难了！<br><span style="white-space:normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span>我刚接触电子游戏的时候也是，天天挂，挂的我怀疑人生，大家都知道电子游戏吃吐分是有概率的，本以为狗庄故意吃我分，后来就到处找台子，导致手机里几十个台子，然而结果一样，无论是哪里只要一充就挂，之后我就总结，为什么就算换了那么多台子，结果还是一样！最终得出的结论是自己的玩法出了问题！<br>言归正传！那么怎么才能提高自己的胜率？<br><span style="white-space:normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span>我个人认为，PG每个分段都是有奖池的，比如2块、6块、10块、20、分段越高，爆分概率越小，原理就是高分段玩的人少，奖池累计的慢！总之我经历的免费旋转100以上基本上就等于空转，能有个50倍就谢天谢地了！大分要就不爆，要么就大爆！毕竟玩大分的是少数，奖池满了平均分配给在线的玩家！我见过一个老哥500爆了100多W！可是换位思考一下，我们看见的只是光鲜的一面！他背后的辛酸只有他自己懂！<br><span style="white-space:normal;">&nbsp; &nbsp; &nbsp; &nbsp;</span>有天我200进免费连续两次空转，我气得直接手机砸了！从那以后我再也不玩大了，最大不超过100！然而小分段玩的人多，奖池就累计的快！基本上看到千倍爆率以上的都是小分段爆的！<br>&nbsp; &nbsp; &nbsp; &nbsp;我习惯的玩法是低于1500本金我是绝对不会玩的，有些老哥就喜欢100，200冲，就算你红个100,200又怎么样？同样是红一倍本金，你是根本看不上眼的！付出和回报永远都是相对的，你别想着用100 ，200去赢1000，2000那种概率极低！百分之九十都是挂逼的！大多数老哥挂逼就会继续冲，那样就属于负追玩了，负追是大忌！特别容易上头！最终结果一样输个千把两千，甚至更多!<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;我也看过太多的老哥上去就冲个几千，开始还会6块10块转转，运气好吐点分他还会理智一点，运气不怎么好，直接20、50、100干，一个劲头铁硬钢！然并卵很快立正！电子转干这类型的老哥，一般这类型的老哥都是爆过大分的，他总觉得幸运还会降临！ 打大分的时候，请看看自己的钱包能不能支撑的住！还有不要一直去追求进免费旋转，只要吐分就行，吐分的时候平拉都比免费旋转给的多！你头铁一直往上加分，好不容易来个免费，此时期待感非常大，幻想来个几百倍！然而给你个二三十倍甚至空转！气得你骂街。这时你会更加上头！<br>&nbsp; &nbsp; &nbsp; &nbsp; 我玩都是准备个1500到2000本金无论输赢不在充值！把分段分成 1.8、 2.4、 3.6、 4.8、 6、 10、 20、 七个档位 ！每个档位各旋转100次去尝试吃吐分率，比如1.8档100次亏本就换到2.4在旋转100次，如果不亏我就会一直在2.4打，直到他吃掉你在这个分段盈利的百分之30，这时候如果总体盈利你可以选择回到1.8，如果亏本就打3.6的档位 依次类推!随着后面档位逐步递增,一般后面档位出个一两百倍，运气好点来个几百倍就可以收工了！<br>&nbsp; &nbsp; &nbsp; &nbsp; 吐分的时候你是会有感觉的，给分的频率特别高，别看着吐分你就加注，然而一加注就嘎嘎掉分！我之前经常这样，最后我才认为其实加到了一个吃分是分段！也许老哥运气好刚好加到那个分段也在吐分！但这种运气不是一直有的！别小看1.8、2.4、3.6这种小分，给你来个几百倍不比你10块20爆的差！电子就是以小博大的！<br>&nbsp; &nbsp; &nbsp; &nbsp; 我个人建议你冲多少就打多少！一定要有个明确的目标！漫无目的的去干最终结果是个零！别到时候懊悔的对自己说一句，草他妈的那时候该收的!谨记见好就收才是王道！建议提走盈利的百分之70！给狗庄留下百分之30！就当还给他的。用这百分之30去冲刺！你想怎么打就怎么打，你也可以去高倍转个几次，或者玩玩买免费的游戏！万一有惊喜呢？输有限赢无限！鬼知道会不会在打个几倍几十倍甚至几百倍的本金呢？<br>&nbsp; &nbsp; &nbsp; &nbsp; 总之玩电子一定要有耐心！有耐心你就能喝汤吃肉！没耐心的就给其他老哥们填坑！以上玩法我不能保证老哥们包赢！但是绝对能大大的提高胜率，改变天天挂壁的结局！</p>        </div>
     </div>
 
+    <!-- 公告 -->
+    <div id="lightbox-2" class="lightbox">
+        <a class="lightbox_close" href="javascript:;"></a>
+        <div class="lightbox_title">
+            <!-- <img class="line" src="img/line.png" alt=""> -->
+            <h2>公告通知</h2>
+            <!-- <img class="line" src="img/line.png" alt=""> -->
+        </div>
 
-<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/swiper.min.js"></script>
-<script src="/static/js/jquery.marquee.min.js"></script>
-<script src="/static/js/js.js"></script>
+        <div class="lightbox_content">
+                        <p>电子试玩网永久网址：629.ceo</p>
+                       <p><span style="white-space:normal;">欢迎喜爱电子游戏的老哥们，来到电子试玩网！本站由【</span><span style="white-space:normal;">PG电子，WG电子，JDB电子，CQ9电子，BBIN电子</span><span style="white-space:normal;">，PP电子，开元棋牌，乐游棋牌</span><span style="white-space:normal;">】联合授权免费试玩！</span><span style="white-space:normal;">支持</span><span style="white-space:normal;">所有游戏免费试玩，全网独一无二，仅此一家！易记域名：629.ceo</span></p>
+                       <p>本站推荐平台，本站担保，绝不黑款，如有特殊情况请联系telegram：dzsww777&nbsp; &nbsp;一定会给您处理好！</p>
+                       <p>温馨提醒：因各别地区屏蔽原因，如遇试玩游戏无法打开，请连接VPN翻墙至国外进行访问。本站推荐VPN：QuickFox（快狐VPN)，海归VPN ，都支持免费试用！<br></p>
+                   </div>
+    </div>
+    <div id="lightbox_lightboxbg"></div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/jquery.marquee.min.js"></script>
+    <script src="/static/wap/js/js.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
 </body>
-
-</html>
-<script src="/static/layui/layui.js" charset="utf-8"></script>
-<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-<script>LA.init({id:"JmU4mL2tlh8i6Jc3",ck:"JmU4mL2tlh8i6Jc3"})</script>
-<script>
-    $(function(){
-        document.onkeydown = function(e){
-            var ev = document.all ? window.event : e;
-            if(ev.keyCode==13) {
-                var layer = layui.layer;
-                var searchName = $("#searchName").val();
-                if (searchName){
-                    //锚点
-                    $("html,body").animate({scrollTop:$("#p99999").offset().top},1000);
-                    //请求数据
-                    $.post("index.php/index/Index/game",{name:searchName},function(result){
-                        console.log(result);
-                        $("#spanGG").html(result.html);
-                        $('a.tab0'+result.id).addClass("active");
-
-                        // $('a.tab0'+result.id).click();
-                        // $('a.tab0'+result.id).off("click").click(function(){
-                        //     // alert("执行");
-                        //     //console.log('sss');
-                        // });
-                    });
-                }
-            }
-        }
-    });
-
-
-</script>
-<script>
-    window.onload = function(){
-        $.post("index.php/index/Index/open",{id:1},function(result){
-            console.log(result);
-            if (result.flag){
-                layui.use('layer', function(){ //独立版的layer无需执行这一句
-                    var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
-                    var type = 1;
-                    var imgss  = result.img;
-                    layer.open({
-                        type: 1
-                        ,offset: type //具体配置参考：http://www.ilayuis.com/doc/modules/layer.html#offset
-                        ,id: 'layerDemo'+type //防止重复弹出
-                        ,content: imgss
-                        ,btn: '关闭'
-                        ,btnAlign: 'c' //按钮居中
-                        ,shade: 0 //不显示遮罩
-                        ,yes: function(){
-                            layer.closeAll();
-                        }
-                    });
-                });
-            }
-        });
-    }
-    $.post("index.php/index/Index/game",{id:10},function(result){
-        console.log(result);
-        $("#spanGG").html(result.html);
-    });
-
-    function yiru(id,img) {
-        $("#icon"+id).attr("src",img);
-    }
-    function yichu(id,img) {
-        $("#icon"+id).attr("src",img);
-    }
-    function layer0(id) {
-        $.post("index.php/index/Index/notice",{id:id},function(result){
-            console.log(result);
-            if (result.txt){
-                var txt = result.txt;
-                var layer = layui.layer;
-                layer.open({
-                    content:"<div style='width: 500px;height: 500px'>"+txt+"</div>"
-                })
-            }
-        });
-    }
-    //搜索
-    function search() {
-        var layer = layui.layer;
-        var searchName = $("#searchName").val();
-        if (!searchName){
-            layer.msg('名称不能为空');
-            return false;
-        }
-        //锚点
-        $("html,body").animate({scrollTop:$("#p99999").offset().top},1000);
-        //请求数据
-        $.post("index.php/index/Index/game",{name:searchName},function(result){
-            console.log(result);
-            $("#spanGG").html(result.html);
-            $('a.tab0'+result.id).addClass("active");
-
-            // $('a.tab0'+result.id).click();
-            // $('a.tab0'+result.id).off("click").click(function(){
-            //     // alert("执行");
-            //     //console.log('sss');
-            // });
-        });
-        // $('a.tab0'+result.id).off("click").click(function(){
-        //    // alert("执行");
-        //     //console.log(ssss);
-        // });
-        // $('#box').addClass('active')    // 添加
-        // layer.open({
-        //     content:'ddd'
-        // })
-    }
-    //按照分类搜索
-    function game(id) {
-        $.post("index.php/index/Index/game",{id:id},function(result){
-            console.log(result);
-            $("#spanGG").html(result.html);
-        });
-        return false;
-    }
-    //弹出iframe
-    function yyyy(url) {
-        //alert(tt);
-        // var txt = '<iframe src="https://blog.csdn.net/ name="iframe_a">\n' +
-        //     ' <p>您的浏览器不支持  iframe 标签。</p>\n' +
-        //     '</iframe>';
-        // layer.open({
-        //     content:txt
-        // })
-        var that = this;
-        //多窗口模式，层叠置顶
-        layer.open({
-            type: 2 //此处以iframe举例
-            ,title: ' '
-            ,area: ['90%', '660px']
-            ,shade: 0
-            ,maxmin: true
-            ,offset: 'auto'
-            ,content: [url]
-
-            ,btn: [] //只是为了演示
-            ,yes: function(){
-                $(that).click();
-            }
-            ,btn2: function(){
-                layer.closeAll();
-            }
-
-            ,zIndex: layer.zIndex //重点1
-            ,success: function(layero, index){
-                layer.setTop(layero); //重点2. 保持选中窗口置顶
-
-                //记录索引，以便按 esc 键关闭。事件见代码最末尾处。
-                layer.escIndex = layer.escIndex || [];
-                layer.escIndex.unshift(index);
-                //选中当前层时，将当前层索引放置在首位
-                layero.on('mousedown', function(){
-                    var _index = layer.escIndex.indexOf(index);
-                    if(_index !== -1){
-                        layer.escIndex.splice(_index, 1); //删除原有索引
-                    }
-                    layer.escIndex.unshift(index); //将索引插入到数组首位
-                });
-            }
-            ,end: function(){
-                //更新索引
-                if(typeof layer.escIndex === 'object'){
-                    layer.escIndex.splice(0, 1);
-                }
-            }
-        });
-    }
